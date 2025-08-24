@@ -75,25 +75,34 @@
 #     print(f'{n} korovy')
 # else:
 #     print(f'{n} korov')
-#Task 10
-n = int(input())
-a = 0
-b = 0
-c = 0
-if n > 60:
-    c = n // 60
-    n  = n - c
-    if n < 9:
-        a += n
-    elif n <= 30:
-        b = n // 10
-    print(f'{a};{b};{c}')
-else:
-    if n < 9:
-        a += n
-    elif n <= 30:
-        b = n // 10
-    print(f'{a};{b};{c}')
+# #Task 10
+# n = int(input())
+# a = 0
+# b = 0
+# c = 0
+# c  = n // 60
+# n = n % 60
+# if n <= 8:
+#     a = n
+# elif n <= 30:
+#     b = n // 10
+#     n = n % 10
+#     if n % 10 != 0:
+#         if n == 9:
+#             b += 1
+#         else:
+#             a = n % 10
+# else:
+#     c += 1
+# print(f'{a}:{b}:{c}')
+# #Task 11
+# k = int(input())
+# m = int(input())
+# n = int(input())
+# m = m * 2
+# b = n // k
+# c = n % k
+# print(m * (b+c))
 
 
 
