@@ -27,13 +27,15 @@
 # n = 'Bilbo.Baggins@bagend.hobbiton.shire.me'
 # print(n.replace('@',''))
 #Task 6
-n = 'python'
-for i in range(len(n)):
-    if n[i]%3==0:
-        n = n.replace(i,n)
-    else:
-        continue
-print(n)
+# n = 'python'
+# result = ''
+# for i in range(len(n)):
+#     if i % 3 == 0:
+#         continue
+#     else:
+#         result += n[i]
+# print(result)
+#не дошло как сделать
 
 
 
