@@ -87,17 +87,64 @@
 #         temp = dub[i]
 #         count += 1
 # print(count)
-#task9
-dub = list()
-n = input()
-temp1 = None
-temp2 = None
-while n != 'stop':
-    dub.append(int(n))
-    n = input()
-for i in range(len(dub) - 1):
-    if temp1 > dub[i]:
-        temp = dub[i]
-        count += 1
-print(count)
-
+# #task9
+# dub = list()
+# n = input()
+# temp1 = 0
+# temp2 = 0
+# while n != 'stop':
+#     dub.append(int(n))
+#     n = input()
+# for i in range(len(dub)):
+#     if temp1 == 0 or temp1 > dub[i]:
+#         temp1 = dub[i]
+#     if temp2 == 0 or temp2 < dub[i]:
+#         temp2 = dub[i]
+# for i in range(len(dub)):
+#     if temp1 == dub[i]:
+#         dub[i] = temp2
+#     elif temp2 == dub[i]:
+#         dub[i] = temp1
+#     print(dub)
+# #task10
+# dub = list()
+# gun = dict()
+# n = input()
+# temp = 0
+# while n != 'stop':
+#     dub.append(int(n))
+#     n = input()
+# for i in dub:
+#     if i in gun:
+#         gun[i] += 1
+#     else:
+#         gun[i] = 1
+# first = True
+# for key in gun:
+#     if first:
+#         temp = gun[key]
+#         first = False
+#     elif gun[key] < temp:
+#         temp = gun[key]
+# print(temp)
+# #task11
+# dub = list()
+# n = input()
+# while n != 'stop':
+#     dub.append(int(n))
+#     n = input()
+# g = dub[0]
+# count = 0
+# max_count = 1
+# max_g = g
+# for i in range(len(dub)):
+#     if dub[i] == g:
+#         count += 1
+#     else:
+#         if count > max_count:
+#             max_count = count
+#             max_g = g
+#             count = 1
+#         g = dub[i]
+#         count = 1
+# print(max_g," ",max_count)

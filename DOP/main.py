@@ -34,11 +34,11 @@
 #     else:
 #         E(n//2)
 # E(8)
-b = 0
-def u(n):
-     if n < 10:
-         return n
-     else:
-         return n % 10 + u(n // 10)
-u(179)
-print(u(179))
+# b = 0
+# def u(n):
+#      if n < 10:
+#          return n
+#      else:
+#          return n % 10 + u(n // 10)
+# u(179)
+# print(u(179))
