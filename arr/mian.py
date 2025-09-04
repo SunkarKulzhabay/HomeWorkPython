@@ -1,11 +1,15 @@
 #task1
-row = int(input())
-cols = int(input())
-matrix = []
-for i in range(row):
-    row = []
-    for j in range(cols):
-        value = int(input(f"Введите элемент [{i}][{j}]: "))
-        row.append(value)
-    matrix.append(row)
+n, m = map(int, input().split())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+max_value = matrix[0][0]
+max_row, max_col = 0, 0
+for i in range(n):
+    for j in range(m):
+        if matrix[i][j] > max_value:
+            max_value = matrix[i][j]
+            max_row, max_col = i, j
+print(max_row, max_col)
+
+
+
 
