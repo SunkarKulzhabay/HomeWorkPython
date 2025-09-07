@@ -50,7 +50,17 @@ def SwapColumns(A, i, j):
         for w in range(n):
             if A[h][w] == A[i][w] or A[h][w] == A[j][w]:
                 l = A[h][w]
-
+n = int(input())
+m = int(input())
+array = [[0 for _ in range(n)] for _ in range(m)]
+for i in range(m):
+    for j in range(n):
+        array[i][j] = int(input())
+def SwapColumns(A, i, j):
+    for h in range(n):
+        for w in range(n):
+            if A[h][w] == A[i][w] or A[h][w] == A[j][w]:
+                l = A[h][w]
 
 
 
