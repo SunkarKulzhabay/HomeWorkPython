@@ -38,29 +38,21 @@
 #             array[i][j] = "*"
 # for row in array:
 #     print(" ".join(row))
-#task 4
-n = int(input())
-m = int(input())
-array = [[0 for _ in range(n)] for _ in range(m)]
-for i in range(m):
-    for j in range(n):
-        array[i][j] = int(input())
-def SwapColumns(A, i, j):
-    for h in range(n):
-        for w in range(n):
-            if A[h][w] == A[i][w] or A[h][w] == A[j][w]:
-                l = A[h][w]
-n = int(input())
-m = int(input())
-array = [[0 for _ in range(n)] for _ in range(m)]
-for i in range(m):
-    for j in range(n):
-        array[i][j] = int(input())
-def SwapColumns(A, i, j):
-    for h in range(n):
-        for w in range(n):
-            if A[h][w] == A[i][w] or A[h][w] == A[j][w]:
-                l = A[h][w]
+# #task 4
+# def SwapColumns(A, i, j):
+#     n = len(A)
+#     for row in range(n):
+#         A[row][i], A[row][j] = A[row][j], A[row][i]
+#     return A
+#
+# n, m = map(int, input().split())
+# A = [list(map(int, input().split())) for _ in range(n)]
+# i, j = map(int, input().split())
+# result = SwapColumns(A, i, j)
+# for row in result:
+#     print(*row)
+
+
 
 
 
